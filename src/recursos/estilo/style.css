@@ -1,0 +1,179 @@
+
+/*Reseteo*/
+
+html {
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  margin: 0;
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.6;
+  color: #222222;
+  background-color: #e8eef5;
+}
+
+a {
+  color: #1f5fa8;
+}
+
+/*header y nav*/
+
+.encabezado_principal {
+  background-color: #1d3557;
+  color: white;
+  padding: 25px;
+}
+
+.encabezado_principal h1 {
+  margin: 0;
+}
+
+
+.encabezado_principal p {
+    
+  margin: 5px 0 0;
+}
+
+.menu {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+
+/*main, section y article*/
+
+.contenido_principal {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.contenido_principal section {
+  margin-bottom: 35px;
+}
+
+
+.proyecto {
+  background-color: rgba(249, 246, 246, 0.564);
+  border: 1px solid #0071fc;
+  border-left: 6px solid #1f5fa8;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.proyecto h3 {
+  margin: 0 0 5px;
+}
+
+.proyecto p {
+  margin: 0;
+}
+
+
+.enlace_modelo_caja {
+  display: inline-block;
+  background-color: #1d3557;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.enlace_modelo_caja:hover {
+  background-color: #1f5fa8;
+}
+
+/*footer*/
+
+.pie_de_pagina {
+  display: flex;
+  justify-content: center;
+  background-color: #1d3557;
+  color: white;
+  padding: 20px 25px;
+  font-size: 14px;
+}
+
+.pie_de_pagina p {
+  margin: 0;
+}
+
+/*Demostración de border-box y content-box*/
+
+.cajas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+
+
+
+.content-box {
+  box-sizing: content-box;
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid #1d3557;
+  background-color: #bcd7f5;
+}
+
+
+.border-box {
+  box-sizing: border-box;
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid #1d3557;
+  background-color: #bcd7f5;
+}
+
+/*Contenedor padre */
+
+.padre {
+  width: 250px;
+  padding: 10px;
+  border: 2px solid #1d3557;
+  background-color: white;
+}
+
+.hijo {
+  width: 100%;
+  margin: 10px 0 0;
+  padding: 15px;
+  border: 2px solid #1f5fa8;
+  background-color: #bcd7f5;
+}
+
+.padre_content-box {
+  box-sizing: content-box;
+}
+
+.padre_border-box {
+  box-sizing: border-box;
+}
